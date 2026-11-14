@@ -9,8 +9,14 @@
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
+    document.querySelectorAll('.site-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.body.classList.remove('mobile-menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 768 && document.body.classList.contains('mobile-menu-open')) {
+      if (window.innerWidth > 720 && document.body.classList.contains('mobile-menu-open')) {
         document.body.classList.remove('mobile-menu-open');
         toggle.setAttribute('aria-expanded', 'false');
       }

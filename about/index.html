@@ -12,119 +12,120 @@
   <meta property="og:url" content="https://www.elettranova.com/about">
   <meta property="og:description" content="A professional services and engineering company">
   <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#05123d">
   <link rel="preload" href="../assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <div class="overflow-wrapper">
-    <div class="mobile-bar-wrapper">
-      <button class="mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <svg class="icon-hamburger" viewBox="0 0 24 18" aria-hidden="true"><path d="M0 1.5h24M0 8.5h24M0 15.5h24"/></svg>
-        <svg class="icon-close" viewBox="0 0 24 18" aria-hidden="true"><path d="M5 2l14 14M19 2L5 16"/></svg>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="../"><img src="../assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
+      <button class="mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-hamburger" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18M3 12h18M3 17.5h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
       </button>
-      <div class="mobile-branding-wrapper">
-        <a href="../"><img src="../assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
-      </div>
-      <div class="mobile-bar-flex-child"></div>
-    </div>
-    <div class="overlay-nav-container" id="mobile-nav">
-      <nav class="mobile-primary-nav-links" aria-label="Mobile">
-          <div class="nav-item"><a href="../">Home</a></div>
-          <div class="nav-item active"><a href="../about/" aria-current="page">About</a></div>
-          <div class="nav-item"><a href="../contact/">Contact</a></div>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../#services">Services</a>
+        <a href="../about/" aria-current="page">About</a>
+        <a class="nav-cta" href="../contact/">Contact</a>
       </nav>
     </div>
-    <div class="site-container">
-      <header class="site-header">
-        <div class="header-left"></div>
-        <div class="header-center">
-          <div class="logo-wrapper">
-            <div class="logo-image">
-              <a href="../"><img src="../assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
-            </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">About</span>
+        <h1>Passion. Experience. Diligence.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap duo">
+        <div class="prose">
+          <h2>About Elettranova</h2>
+          <p>Elettranova is a single-shop integrator of global engineering and consulting services, based in the Silicon Valley. Our team of experts includes highly trained scientists, engineers, analysts, and security advisors as well as business process, legal and regulatory affairs specialists. Our customers have a diverse range of needs and we work with each customer to design a dynamic and highly-skilled team to execute to their projects with diligence and excellence.</p>
+        </div>
+        <div class="prose">
+          <h2>What we offer</h2>
+          <p>From start-ups planning to complex engineering projects, we provide each customer with an independent and highly-customized solution. Our team of experts manage and control the execution of all project components, from inception to completion, and assure quality, functionality and on-time delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What we do</span>
+          <h2>Areas of Practice</h2>
+        </div>
+        <div class="tiles">
+          <a class="tile" href="../#design">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span>
+            <h3>Design &amp; Engineering</h3>
+            <p>New product and infrastructure designs, and improvements to existing ones.</p>
+          </a>
+          <a class="tile" href="../#research">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.2L4.6 18.4A1.8 1.8 0 0 0 6.2 21h11.6a1.8 1.8 0 0 0 1.6-2.6L14 9.2V3"/><path d="M7.6 14.5h8.8"/></svg></span>
+            <h3>Research &amp; Development</h3>
+            <p>Research to identify competition and develop top-of-the-line products.</p>
+          </a>
+          <a class="tile" href="../#energy">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg></span>
+            <h3>Energy &amp; Cleantech</h3>
+            <p>Solar, wind, biomass and geothermal projects with a zero-carbon footprint.</p>
+          </a>
+          <a class="tile" href="../#defense">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6l8-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg></span>
+            <h3>Defense &amp; Security</h3>
+            <p>Security, scalability, ease of use and collaboration.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Let’s chat.</h2>
+            <p>Tell us about your project and we’ll call you back to schedule an appointment.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="../contact/">Get in touch <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="email" href="mailto:info@elettranova.com">info@elettranova.com</a>
           </div>
         </div>
-        <div class="header-right">
-          <nav class="site-navigation" aria-label="Primary">
-            <div class="nav-item"><a href="../">Home</a></div>
-            <div class="nav-item active"><a href="../about/" aria-current="page">About</a></div>
-            <div class="nav-item"><a href="../contact/">Contact</a></div>
-          </nav>
-        </div>
-      </header>
-      <main class="site-page">
-        <div class="page-text-wrapper page-intro">
-          <h1 class="page-title">About</h1>
-          <div class="page-description"><p>Passion. Experience. Diligence.</p></div>
-        </div>
-        <div class="main-content">
-          <div class="row">
-            <div class="col col-12">
-              <div class="row">
-                <div class="col col-7">
-                  <div class="block pt0 pb0 text"><h1>About Elettranova</h1><p>Elettranova is a single-shop integrator of global engineering and consulting services, based in the Silicon Valley. Our team of experts includes highly trained scientists, engineers, analysts, and security advisors as well as business process, legal and regulatory affairs specialists. Our customers have a diverse range of needs and we work with each customer to design a dynamic and highly-skilled team to execute to their projects with diligence and excellence.</p></div>
-                </div>
-                <div class="col col-5">
-                  <div class="block pt0 pb0 text"><h1>What we offer</h1><p>From start-ups planning to complex engineering projects, we provide each customer with an independent and highly-customized solution. Our team of experts manage and control the execution of all project components, from inception to completion, and assure quality, functionality and on-time delivery.</p></div>
-                </div>
-              </div>
-              <div class="block rule"><hr></div>
-              <div class="block text"><h1>Leadership</h1></div>
-              <div class="row">
-                <div class="col col-4">
-                  <div class="block image"><img src="../assets/img/fabio-ficano.jpg" alt="Fabio Ficano" width="998" height="1260"></div>
-                </div>
-                <div class="col col-8">
-                  <div class="row">
-                    <div class="col col-7">
-                      <div class="block text"><h3><em>Fabio Ficano,<br>Founder &amp; managing director</em></h3><p><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/fabioficano/">Fabio Ficano</a>&nbsp;is Founder &amp; President of Elettranova Engineering. Ficano is an eclectic entrepreneur, investor and tireless business leader specialized in clean/green technology, renewable energy, large infrastructure projects, security technology, transportation, biometrics, defense and global industry affairs.</p><p>Ficano is also Founder and President of <a target="_blank" rel="noopener" href="http://www.lufrarise.com">LufraRise</a>; a firm specialized in business development, government and industry affairs with particular emphasis on bi-lateral investments between U.S. and European enterprises. Ficano is also Co-founder and Managing Partner of Moncada Energy USA and Moncada Energy Malaysia &amp; Philippines. Ficano is a member of the “U.S.–Italy Bilateral Climate and Energy Partnership”, and since 2014, has been a commissioner and judge for the U.S.-Italy Fulbright Best Commission.</p></div>
-                    </div>
-                    <div class="col col-1">
-                      <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col col-1">
-                  <div class="block spacer"><div class="spacer-inner" style="padding-bottom:19.1304%">&nbsp;</div></div>
-                </div>
-                <div class="col col-11">
-                  <div class="row">
-                    <div class="col col-10">
-                      <div class="block rule"><hr></div>
-                    </div>
-                    <div class="col col-1">
-                      <div class="block spacer"><div class="spacer-inner" style="padding-bottom:19.1304%">&nbsp;</div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="site-footer">
-        <div class="row">
-          <div class="col col-12">
-            <div class="block pt0 rule"><hr></div>
-            <div class="row">
-              <div class="col col-7">
-                <div class="block text"><p><a href="../">home&nbsp;</a>|&nbsp;<a href="../about/">about&nbsp;</a>|&nbsp;&nbsp;<a href="../contact/">contact</a></p><p>info@elettranova.com</p></div>
-              </div>
-              <div class="col col-1">
-                <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-              </div>
-              <div class="col col-4">
-                <div class="block text"><p class="right">Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p><p class="right">&nbsp;</p></div>
-              </div>
-            </div>
-            <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="brand">Elettranova Engineering</p>
+        <p>Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../#services">Services</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:info@elettranova.com">info@elettranova.com</a></li>
+          <li>San Francisco, California</li>
+        </ul>
+      </div>
     </div>
-  </div>
+    <div class="wrap footer-bottom">© Elettranova Engineering</div>
+  </footer>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

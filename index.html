@@ -12,130 +12,156 @@
   <meta property="og:url" content="https://www.elettranova.com/">
   <meta property="og:description" content="A professional services and engineering company">
   <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#05123d">
   <link rel="preload" href="./assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <div class="overflow-wrapper">
-    <div class="mobile-bar-wrapper">
-      <button class="mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <svg class="icon-hamburger" viewBox="0 0 24 18" aria-hidden="true"><path d="M0 1.5h24M0 8.5h24M0 15.5h24"/></svg>
-        <svg class="icon-close" viewBox="0 0 24 18" aria-hidden="true"><path d="M5 2l14 14M19 2L5 16"/></svg>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="./"><img src="./assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
+      <button class="mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-hamburger" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18M3 12h18M3 17.5h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
       </button>
-      <div class="mobile-branding-wrapper">
-        <a href="./"><img src="./assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
-      </div>
-      <div class="mobile-bar-flex-child"></div>
-    </div>
-    <div class="overlay-nav-container" id="mobile-nav">
-      <nav class="mobile-primary-nav-links" aria-label="Mobile">
-          <div class="nav-item active"><a href="./" aria-current="page">Home</a></div>
-          <div class="nav-item"><a href="./about/">About</a></div>
-          <div class="nav-item"><a href="./contact/">Contact</a></div>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="./" aria-current="page">Home</a>
+        <a href="./#services">Services</a>
+        <a href="./about/">About</a>
+        <a class="nav-cta" href="./contact/">Contact</a>
       </nav>
     </div>
-    <div class="site-container">
-      <header class="site-header">
-        <div class="header-left"></div>
-        <div class="header-center">
-          <div class="logo-wrapper">
-            <div class="logo-image">
-              <a href="./"><img src="./assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
-            </div>
-          </div>
-        </div>
-        <div class="header-right">
-          <nav class="site-navigation" aria-label="Primary">
-            <div class="nav-item active"><a href="./" aria-current="page">Home</a></div>
-            <div class="nav-item"><a href="./about/">About</a></div>
-            <div class="nav-item"><a href="./contact/">Contact</a></div>
-          </nav>
-        </div>
-      </header>
-      <div class="page-banner-wrapper">
-        <img class="page-banner-image" src="./assets/img/hero.jpg" alt="" width="849" height="401">
-        <div class="page-text-wrapper">
-          <h1 class="page-title">Home</h1>
-          <div class="page-description"><p>A professional services and engineering company</p></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="./assets/img/hero.jpg" alt="" width="849" height="401">
+      <div class="wrap hero-inner">
+        <span class="eyebrow">Elettranova Engineering</span>
+        <h1>A professional services and engineering company</h1>
+        <p class="lead">Headquartered in San Francisco, California, Elettranova provides comprehensive or stand-alone solutions serving a broad range of client needs.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#services">Explore our services <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn-ghost" href="./contact/">Get in touch</a>
         </div>
       </div>
-      <main class="site-page">
-        <div class="main-content">
-          <div class="row">
-            <div class="col col-12">
-              <div class="block pt0 pb0 spacer"><div class="spacer-inner">&nbsp;</div></div>
-            </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">Our services</span>
+          <h2>Expertise for every stage of your project</h2>
+        </div>
+        <div class="prose">
+          <p class="lead">Our expert team is experienced in strategic consultancy, preparation of tender documentation, procurement procedures, customer relationship management, business continuity planning, business process reengineering, product development and engineering.</p>
+          <p>Whether you’re a large or small and growing business, we're on the pulse of modern technology and bring extensive experience and professionalism to every case and customize our support to your individual needs.</p>
+          <p>Get in touch with us to set up a consultation, or use the <a href="./contact/">contact form</a> to enquire whether our services are right for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">What we do</span>
+          <h2>Areas of Practice</h2>
+        </div>
+        <div class="cards">
+          <article class="card" id="design">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span>
+            <h3>Design &amp; Engineering</h3>
+            <p>At <strong>Elettranova</strong> we put your ideas into action. Our experienced and knowledgeable team will help you create new product and infrastructure designs and improve upon existing ones to make better, more efficient products.</p>
+            <ul class="checklist">
+              <li>Modeling</li>
+              <li>Process improvements</li>
+              <li>Device Design</li>
+              <li>Technical documentation</li>
+              <li>Equipment Engineering</li>
+            </ul>
+          </article>
+          <article class="card" id="research">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.2L4.6 18.4A1.8 1.8 0 0 0 6.2 21h11.6a1.8 1.8 0 0 0 1.6-2.6L14 9.2V3"/><path d="M7.6 14.5h8.8"/></svg></span>
+            <h3>Research &amp; Development</h3>
+            <p>Our Research and Development team helps secure your place in the market. We conduct research to identify competition and develop your products to be top of the line.</p>
+            <ul class="checklist">
+              <li>Tool Procurement, installation, relocation &amp; maintenance</li>
+              <li>Forensic and tool inspection</li>
+              <li>High Tech Operations/IE</li>
+              <li>Consulting Studies</li>
+              <li>Supplier Ecosystem</li>
+              <li>Economic Development</li>
+            </ul>
+          </article>
+          <article class="card" id="energy">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg></span>
+            <h3>Energy &amp; Cleantech</h3>
+            <p>Our Energy and Clean Tech division concentrates on helping you develop technologies that will leave a zero-carbon footprint and lead to returns on investments. We support solar, wind, biomass and geothermal projects for:</p>
+            <ul class="checklist">
+              <li>Permitting, authorization and construction</li>
+              <li>Design and engineering of all major components</li>
+              <li>Building, development, financing and operating small scale industrial renewable energy projects</li>
+              <li>Total supply chain controls</li>
+            </ul>
+          </article>
+          <article class="card" id="defense">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6l8-3z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg></span>
+            <h3>Defense &amp; Security</h3>
+            <p>Our Defense and Security division focuses on security, scalability, as well as products ease of use, and collaboration.</p>
+            <ul class="checklist">
+              <li>Full spectrum threat and vulnerability assessments</li>
+              <li>Specialized intelligence and security services</li>
+              <li>Anti-terrorism measures including Chemical Facility Standards (CFATS)</li>
+              <li>Infrastructure Penetration testing</li>
+              <li>Geo-political defense advisory</li>
+              <li>Data security &amp; privacy</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Let’s chat.</h2>
+            <p>Tell us about your project and we’ll call you back to schedule an appointment.</p>
           </div>
-          <div class="row">
-            <div class="col col-7">
-              <div class="block text"><h1>Our services</h1><p>Headquartered in San Francisco, California, <strong>Elettranova</strong> provides comprehensive or stand-alone solutions serving a broad range of client needs. Our expert team is experienced in strategic consultancy, preparation of tender documentation, procurement procedures, customer relationship management, business continuity planning, business process reengineering, product development and engineering.</p><p>Whether you’re a large or small and growing business, we're on the pulse of modern technology and bring extensive experience and professionalism to every case and customize our support to your individual needs.</p><p>Get in touch with us to set up a consultation, or use the contact form at the bottom of this page to enquire whether our services are right for you.</p></div>
-              <div class="block button-block"><a class="btn" href="./about/">Learn More</a></div>
-            </div>
-            <div class="col col-5">
-              <div class="row">
-                <div class="col col-1">
-                  <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-                </div>
-                <div class="col col-4">
-                  <div class="block text"><h1>Contact</h1><h2>info@elettranova.com</h2></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-12">
-              <div class="block spacer"><div class="spacer-inner" style="padding-bottom:7.11078%">&nbsp;</div></div>
-              <div class="block text"><h1>Areas of Practice</h1></div>
-              <div class="row">
-                <div class="col col-6">
-                  <div class="block rule"><hr></div>
-                  <div class="block text"><h3>Design &amp; engineering</h3><p>At <strong>Elettranova</strong> we put your ideas into action. Our experienced and knowledgeable team will help you create new product and infrastructure designs and improve upon existing ones to make better, more efficient products.</p><ul><li><p>Modeling</p></li><li><p>Process improvements</p></li><li><p>Device Design</p></li><li><p>Technical documentation</p></li><li><p>Equipment Engineering</p></li></ul></div>
-                  <div class="block rule"><hr></div>
-                  <div class="block text"><h3>research &amp; development</h3><p>Our Research and Development team helps secure your place in the market. We conduct research to identify competition and develop your products to be top of the line.</p><ul><li><p>Tool Procurement, installation, relocation &amp; maintenance</p></li><li><p>Forensic and tool inspection</p></li><li><p>High Tech Operations/IE</p></li><li><p>Consulting Studies</p></li><li><p>Supplier Ecosystem</p></li><li><p>Economic Development</p></li></ul></div>
-                </div>
-                <div class="col col-6">
-                  <div class="block rule"><hr></div>
-                  <div class="block text"><h3>energy &amp; cleantech</h3><p>Our Energy and Clean Tech division concentrates on helping you develop technologies that will leave a zero-carbon footprint and lead to returns on investments. We support solar, wind, biomass and geothermal projects for;</p><ul><li><p>Permitting, authorization and construction</p></li><li><p>Design and engineering of all major components</p></li><li><p>Building, development, financing and operating small scale industrial renewable energy projects</p></li><li><p>Total supply chain controls</p><p>&nbsp;</p></li></ul></div>
-                  <div class="block rule"><hr></div>
-                  <div class="block text"><h3>defense &amp; security</h3><p>Our Defense and Security division focuses on security, scalability, as well as products ease of use, and collaboration.</p><ul><li><p>Full spectrum threat and vulnerability assessments</p></li><li><p>Specialized intelligence and security services</p></li><li><p>Anti-terrorism measures including Chemical Facility Standards (CFATS)</p></li><li><p>Infrastructure Penetration testing</p></li><li><p>Geo-political defense advisory</p></li><li><p>Data security &amp; privacy</p></li></ul></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col col-2">
-                  <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-                </div>
-                <div class="col col-8">
-                  <div class="block rule"><hr></div>
-                </div>
-                <div class="col col-2">
-                  <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-                </div>
-              </div>
-            </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="./contact/">Get in touch <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="email" href="mailto:info@elettranova.com">info@elettranova.com</a>
           </div>
         </div>
-      </main>
-      <footer class="site-footer">
-        <div class="row">
-          <div class="col col-12">
-            <div class="block pt0 rule"><hr></div>
-            <div class="row">
-              <div class="col col-7">
-                <div class="block text"><p><a href="./">home&nbsp;</a>|&nbsp;<a href="./about/">about&nbsp;</a>|&nbsp;&nbsp;<a href="./contact/">contact</a></p><p>info@elettranova.com</p></div>
-              </div>
-              <div class="col col-1">
-                <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-              </div>
-              <div class="col col-4">
-                <div class="block text"><p class="right">Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p><p class="right">&nbsp;</p></div>
-              </div>
-            </div>
-            <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="brand">Elettranova Engineering</p>
+        <p>Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./#services">Services</a></li>
+          <li><a href="./about/">About</a></li>
+          <li><a href="./contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:info@elettranova.com">info@elettranova.com</a></li>
+          <li>San Francisco, California</li>
+        </ul>
+      </div>
     </div>
-  </div>
+    <div class="wrap footer-bottom">© Elettranova Engineering</div>
+  </footer>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

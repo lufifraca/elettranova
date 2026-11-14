@@ -12,141 +12,122 @@
   <meta property="og:url" content="https://www.elettranova.com/contact">
   <meta property="og:description" content="A professional services and engineering company">
   <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#05123d">
   <link rel="preload" href="../assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <div class="overflow-wrapper">
-    <div class="mobile-bar-wrapper">
-      <button class="mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <svg class="icon-hamburger" viewBox="0 0 24 18" aria-hidden="true"><path d="M0 1.5h24M0 8.5h24M0 15.5h24"/></svg>
-        <svg class="icon-close" viewBox="0 0 24 18" aria-hidden="true"><path d="M5 2l14 14M19 2L5 16"/></svg>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="../"><img src="../assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
+      <button class="mobile-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-hamburger" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18M3 12h18M3 17.5h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
       </button>
-      <div class="mobile-branding-wrapper">
-        <a href="../"><img src="../assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
-      </div>
-      <div class="mobile-bar-flex-child"></div>
-    </div>
-    <div class="overlay-nav-container" id="mobile-nav">
-      <nav class="mobile-primary-nav-links" aria-label="Mobile">
-          <div class="nav-item"><a href="../">Home</a></div>
-          <div class="nav-item"><a href="../about/">About</a></div>
-          <div class="nav-item active"><a href="../contact/" aria-current="page">Contact</a></div>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../#services">Services</a>
+        <a href="../about/">About</a>
+        <a class="nav-cta" href="../contact/" aria-current="page">Contact</a>
       </nav>
     </div>
-    <div class="site-container">
-      <header class="site-header">
-        <div class="header-left"></div>
-        <div class="header-center">
-          <div class="logo-wrapper">
-            <div class="logo-image">
-              <a href="../"><img src="../assets/img/logo.png" alt="Elettranova Engineering" width="1500" height="327"></a>
-            </div>
-          </div>
-        </div>
-        <div class="header-right">
-          <nav class="site-navigation" aria-label="Primary">
-            <div class="nav-item"><a href="../">Home</a></div>
-            <div class="nav-item"><a href="../about/">About</a></div>
-            <div class="nav-item active"><a href="../contact/" aria-current="page">Contact</a></div>
-          </nav>
-        </div>
-      </header>
-      <main class="site-page">
-        <div class="page-text-wrapper page-intro">
-          <h1 class="page-title">Contact</h1>
-          <div class="page-description"><p>Let’s chat.</p></div>
-        </div>
-        <div class="main-content">
-          <div class="row">
-            <div class="col col-12">
-              <div class="row">
-                <div class="col col-7">
-                  <div class="block pt0 text"><h1>Contact us</h1><p>Use the form below to tell us about your inquiry, and we’ll call you back to schedule an appointment. Please be as detailed as possible.</p></div>
-                  <div class="row">
-                    <div class="col col-6">
-                      <div class="block form-block"><form class="contact-form" novalidate>
-                    <fieldset class="form-item" data-field="name">
-                      <legend class="title">Name</legend>
-                      <div class="name-fields">
-                        <div class="field">
-                          <label class="caption" for="fname">First Name<span class="required">(required)</span></label>
-                          <input id="fname" name="fname" type="text" autocomplete="given-name">
-                        </div>
-                        <div class="field">
-                          <label class="caption" for="lname">Last Name<span class="required">(required)</span></label>
-                          <input id="lname" name="lname" type="text" autocomplete="family-name">
-                        </div>
-                      </div>
-                      <p class="field-error" role="alert"></p>
-                    </fieldset>
-                    <div class="form-item" data-field="email">
-                      <label class="title" for="email">Email Address<span class="required">(required)</span></label>
-                      <input id="email" name="email" type="email" autocomplete="email">
-                      <p class="field-error" role="alert"></p>
-                    </div>
-                    <div class="form-item" data-field="phone">
-                      <label class="title phone-title" for="phone">Phone<span class="required">(required)</span></label>
-                      <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
-                      <p class="field-error" role="alert"></p>
-                    </div>
-                    <fieldset class="form-item" data-field="reason">
-                      <legend class="title">Reason of Inquiry<span class="required">(required)</span></legend>
-                      <div class="option"><label><input name="reason" type="checkbox" value="Business Strategy"><span>Business Strategy</span></label></div>
-                      <div class="option"><label><input name="reason" type="checkbox" value="Design &amp; Engineering"><span>Design &amp; Engineering</span></label></div>
-                      <div class="option"><label><input name="reason" type="checkbox" value="Energy &amp; Cleantech"><span>Energy &amp; Cleantech</span></label></div>
-                      <div class="option"><label><input name="reason" type="checkbox" value="Research &amp; Development"><span>Research &amp; Development</span></label></div>
-                      <div class="option"><label><input name="reason" type="checkbox" value="Defense &amp; Security"><span>Defense &amp; Security</span></label></div>
-                      <div class="option"><label><input name="reason" type="checkbox" value="Other"><span>Other</span></label></div>
-                      <p class="field-error" role="alert"></p>
-                    </fieldset>
-                    <div class="form-item" data-field="message">
-                      <label class="title" for="message">How Can We Help?<span class="required">(required)</span></label>
-                      <p class="description">Please do not include confidential or sensitive information in your message.</p>
-                      <textarea id="message" name="message"></textarea>
-                      <p class="field-error" role="alert"></p>
-                    </div>
-                    <div class="hp" aria-hidden="true"><input name="website" type="text" tabindex="-1" autocomplete="off"></div>
-                    <button type="submit">Submit</button>
-                  </form></div>
-                    </div>
-                    <div class="col col-1">
-                      <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-                    </div>
-                  </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Contact</span>
+        <h1>Let’s chat.</h1>
+        <p class="lead">Use the form below to tell us about your inquiry, and we’ll call you back to schedule an appointment. Please be as detailed as possible.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div class="form-card">
+          <form class="contact-form" novalidate>
+            <fieldset class="form-item" data-field="name">
+              <legend>Name</legend>
+              <div class="name-fields">
+                <div class="field">
+                  <label class="caption" for="fname">First Name<span class="required">(required)</span></label>
+                  <input id="fname" name="fname" type="text" autocomplete="given-name">
                 </div>
-                <div class="col col-1">
-                  <div class="block pt0 pb0 spacer"><div class="spacer-inner">&nbsp;</div></div>
-                </div>
-                <div class="col col-4">
-                  <div class="block pt0 pb0 text"><h2>&nbsp;</h2><h2>info@elettranova.com</h2><p>&nbsp;</p></div>
+                <div class="field">
+                  <label class="caption" for="lname">Last Name<span class="required">(required)</span></label>
+                  <input id="lname" name="lname" type="text" autocomplete="family-name">
                 </div>
               </div>
+              <p class="field-error" role="alert"></p>
+            </fieldset>
+            <div class="form-item" data-field="email">
+              <label class="title" for="email">Email Address<span class="required">(required)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email">
+              <p class="field-error" role="alert"></p>
             </div>
-          </div>
-        </div>
-      </main>
-      <footer class="site-footer">
-        <div class="row">
-          <div class="col col-12">
-            <div class="block pt0 rule"><hr></div>
-            <div class="row">
-              <div class="col col-7">
-                <div class="block text"><p><a href="../">home&nbsp;</a>|&nbsp;<a href="../about/">about&nbsp;</a>|&nbsp;&nbsp;<a href="../contact/">contact</a></p><p>info@elettranova.com</p></div>
-              </div>
-              <div class="col col-1">
-                <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-              </div>
-              <div class="col col-4">
-                <div class="block text"><p class="right">Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p><p class="right">&nbsp;</p></div>
-              </div>
+            <div class="form-item" data-field="phone">
+              <label class="title" for="phone">Phone<span class="required">(required)</span></label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+              <p class="field-error" role="alert"></p>
             </div>
-            <div class="block spacer"><div class="spacer-inner">&nbsp;</div></div>
-          </div>
+            <fieldset class="form-item" data-field="reason">
+              <legend>Reason of Inquiry<span class="required">(required)</span></legend>
+              <div class="options">
+                  <label class="option"><input name="reason" type="checkbox" value="Business Strategy"><span>Business Strategy</span></label>
+                  <label class="option"><input name="reason" type="checkbox" value="Design &amp; Engineering"><span>Design &amp; Engineering</span></label>
+                  <label class="option"><input name="reason" type="checkbox" value="Energy &amp; Cleantech"><span>Energy &amp; Cleantech</span></label>
+                  <label class="option"><input name="reason" type="checkbox" value="Research &amp; Development"><span>Research &amp; Development</span></label>
+                  <label class="option"><input name="reason" type="checkbox" value="Defense &amp; Security"><span>Defense &amp; Security</span></label>
+                  <label class="option"><input name="reason" type="checkbox" value="Other"><span>Other</span></label>
+              </div>
+              <p class="field-error" role="alert"></p>
+            </fieldset>
+            <div class="form-item" data-field="message">
+              <label class="title" for="message">How Can We Help?<span class="required">(required)</span></label>
+              <p class="description">Please do not include confidential or sensitive information in your message.</p>
+              <textarea id="message" name="message"></textarea>
+              <p class="field-error" role="alert"></p>
+            </div>
+            <div class="hp" aria-hidden="true"><input name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <button class="btn btn-primary" type="submit">Submit <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+          </form>
         </div>
-      </footer>
+        <aside class="contact-aside">
+          <span class="eyebrow">Email</span>
+          <h2>Prefer email?</h2>
+          <a class="email" href="mailto:info@elettranova.com">info@elettranova.com</a>
+          <hr>
+          <p>Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="brand">Elettranova Engineering</p>
+        <p>Elettranova is a professional services and engineering company, based in Silicon Valley, that provides global product development, project management and integrated engineering services.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../#services">Services</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:info@elettranova.com">info@elettranova.com</a></li>
+          <li>San Francisco, California</li>
+        </ul>
+      </div>
     </div>
-  </div>
+    <div class="wrap footer-bottom">© Elettranova Engineering</div>
+  </footer>
   <script src="../assets/js/main.js"></script>
 </body>
 </html>
