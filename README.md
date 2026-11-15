@@ -10,7 +10,8 @@ about/index.html      About
 contact/index.html    Contact
 assets/css/style.css  All styles (responsive down to phone widths)
 assets/js/main.js     Mobile menu + contact form
-assets/img/           Logo and home banner
+assets/img/           Logos, app icons and home banner
+favicon.ico, favicon.svg, apple-touch-icon.png, site.webmanifest   Browser and home-screen icons
 assets/fonts/         Self-hosted web fonts
 ```
 
